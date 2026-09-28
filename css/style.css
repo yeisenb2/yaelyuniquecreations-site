@@ -214,16 +214,6 @@ a { color: inherit; }
 .site-footer a { text-decoration: none; }
 .site-footer a:hover { color: var(--brass); }
 
-/* ---------- Responsive ---------- */
-@media (max-width: 860px) {
-  .hero { grid-template-columns: 1fr; padding: 56px 24px; text-align: center; }
-  .hero-lede { margin-inline: auto; }
-  .site-header, .catalog, .process, .order, .site-footer, .page-header, .products { padding-left: 24px; padding-right: 24px; }
-  .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .process-steps { grid-template-columns: 1fr; }
-}
-
 /* ---------- Category subpages ---------- */
 .page-header {
   padding: 48px 48px 0;
@@ -245,6 +235,13 @@ a { color: inherit; }
   font-weight: 700;
 }
 
+.page-lede {
+  margin: 10px 0 0;
+  font-size: 16px;
+  color: #4a4540;
+  max-width: 56ch;
+}
+
 .products {
   padding: 32px 48px 88px;
   max-width: 1200px;
@@ -253,7 +250,7 @@ a { color: inherit; }
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1px;
   background: var(--line);
   border: 1px solid var(--line);
@@ -287,6 +284,10 @@ a { color: inherit; }
   height: 100%;
   object-fit: cover;
 }
+
+.product-name { margin: 0 0 4px; font-size: 16px; font-weight: 600; }
+.product-detail { margin: 0; font-size: 14px; color: #6a655c; }
+.product-note { margin: 6px 0 0; font-size: 13px; color: #8a8071; line-height: 1.5; }
 
 /* ---------- Lightbox ---------- */
 .lightbox-overlay {
@@ -334,6 +335,14 @@ a { color: inherit; }
   font-size: 13px;
 }
 
-.product-name { margin: 0 0 4px; font-size: 16px; font-weight: 600; }
-.product-detail { margin: 0; font-size: 14px; color: #6a655c; }
-.product-note { margin: 6px 0 0; font-size: 13px; color: #8a8071; line-height: 1.5; }
+/* ---------- Responsive (keep this block LAST) ---------- */
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; padding: 56px 24px; text-align: center; }
+  .hero-lede { margin-inline: auto; }
+  .site-header, .catalog, .process, .order, .site-footer, .page-header, .products { padding-left: 24px; padding-right: 24px; }
+  .site-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .main-nav { gap: 20px; }
+  .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .process-steps { grid-template-columns: 1fr; }
+}
