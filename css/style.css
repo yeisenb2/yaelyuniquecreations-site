@@ -116,7 +116,7 @@ a { color: inherit; }
 }
 
 .catalog-head h2 { margin: 0; font-size: 28px; }
-.catalog-lede { margin: 8px 0 0; color: #b9b4a8; max-width: 46ch; }
+.catalog-lede { margin: 8px 0 0; color: #b9b4a8; max-width: 60ch; }
 
 .category-grid {
   display: grid;
@@ -239,7 +239,7 @@ a { color: inherit; }
   margin: 10px 0 0;
   font-size: 16px;
   color: #4a4540;
-  max-width: 56ch;
+  max-width: 90ch;
 }
 
 .products {
