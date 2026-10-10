@@ -283,7 +283,13 @@ a { color: inherit; }
 
 .product-photo:focus-visible { outline: 2px solid var(--brass); outline-offset: 2px; }
 
+.product-photo {
+  position: relative;
+}
+
 .product-photo img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
