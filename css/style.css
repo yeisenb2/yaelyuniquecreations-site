@@ -332,6 +332,7 @@ a { color: inherit; }
 
 .lightbox-btn:hover { color: var(--brass); }
 .lightbox-btn:focus-visible { outline: 2px solid var(--brass); outline-offset: 2px; }
+.lightbox-btn[hidden] { display: none; }
 
 .lightbox-close { position: absolute; top: 20px; right: 28px; font-size: 28px; }
 .lightbox-prev { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 28px; }
