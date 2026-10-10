@@ -285,6 +285,7 @@ a { color: inherit; }
 
 .product-photo {
   position: relative;
+  width: 100%;
 }
 
 .product-photo img {
